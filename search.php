@@ -24,7 +24,7 @@ if(isset($_POST['but_logout'])){
 
 <?php
 $servername = "mysqldb";
-$username = "root";
+$username = "admin";
 $password = "admin123";
 $dbname = "customers";
 
