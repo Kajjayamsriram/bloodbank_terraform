@@ -3,7 +3,7 @@
 session_start();
 
 $host = "mysqldb"; /* Host name */
-$user = "root"; /* User */
+$user = "admin"; /* User */
 $password = "admin123"; /* Password */
 $dbname = "customers"; /* Database name */
 
