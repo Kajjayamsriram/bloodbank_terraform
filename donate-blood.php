@@ -30,7 +30,7 @@ class script{
         public function __construct(){
 
                 $server = "mysqldb";
-                $user = "root";
+                $user = "admin";
                 $pass = "admin123";
                 $db = "customers";
 
