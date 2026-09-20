@@ -1,4 +1,4 @@
-### NOTE: Jenkinfile for -> Repo: bloodcamp-conf 
+
 # ltibloodbank
 
 # Setting up Ubuntu Machine
