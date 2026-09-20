@@ -10,13 +10,6 @@ pipeline {
 
         scannerHome = tool 'mysonar'
     }
-    parameters{
-        password (
-            name : 'ACCOUNT_ID',
-            defaultValue: '',
-            description: 'AWS Account ID'
-        )
-    }
     stages {
         stage("cleanWs"){
             steps{
