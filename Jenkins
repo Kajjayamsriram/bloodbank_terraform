@@ -56,9 +56,9 @@ pipeline {
         stage ("Ecr login"){
             steps{
                 sh '''
-                echo $ACCOUNT_ID
+                echo $AWS_URI
                 aws ecr get-login-password --region $AWS_REGION \
-                | docker login --username AWS --password-stdin ${AWS_URI}
+                | docker login --username AWS --password-stdin $AWS_URI
                 '''
             }
             //added ecr:PutImage policy soon to ec2 instance_profile for push perms
