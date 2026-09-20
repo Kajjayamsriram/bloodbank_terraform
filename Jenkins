@@ -1,6 +1,5 @@
 pipeline {
-    agent all
-    tools { scannerHome = "mysonar"}
+    agent any
     environment{
         AWS_REGION = 'us-east-1'
         ECR_URI = "${ACCOUNT_ID}.dkr.ecr.us-east-1.amazonaws.com"
@@ -8,6 +7,8 @@ pipeline {
         ECR_DB_REPO = "blood-db"
         IMAGE_TAG  = "${BUILD_NUMBER}"
         //pass using parameters => ACCOUNT_ID
+
+        scannerHome = tool 'mysonar'
     }
     stages {
         stage("cleanWs"){
